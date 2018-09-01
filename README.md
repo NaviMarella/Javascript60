@@ -15,6 +15,7 @@ Javascript 60 Day Challenge to cover important topics and brush up your skills.
 1. Shift Checkbox
 1. Custom Video Player
 1. Slide in Scroll
+1. Object reference vs copy
 ---
 
 Thanks to [Wes Bos](https://twitter.com/wesbos
