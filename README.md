@@ -6,8 +6,7 @@ Javascript 60 Day Challenge to cover important topics and brush up your skills.
 
 1. Drum Kit
 1. JS Clock
-1. Css Variables using JS
-2. Array Methods
+1. Css Variables using . Array Methods
     + Part 1
 1. Flex Panels Gallery
 1. Ajax type Ahead
@@ -16,6 +15,8 @@ Javascript 60 Day Challenge to cover important topics and brush up your skills.
 1. Custom Video Player
 1. Slide in Scroll
 1. Object reference vs copy
+
+   
 ---
 
 Thanks to [Wes Bos](https://twitter.com/wesbos
