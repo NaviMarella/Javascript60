@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Template Strings in ES5</title>
+</head>
+<body>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      min-height: 100vh;
+    }
+  </style>
+
+<script>
+    function changeTemplate(inputStr, data) {
+    return inputStr.replace(/\${(.*?)}/g, function(_, code) {
+        var scoped = code.replace(/(["'\.\w\$]+)/g, function(match) {
+        return /["']/.test(match[0]) ? match : 'scope.' + match;
+        });
+        try {
+        return new Function('scope', 'return '+ scoped)(data);
+        } catch (e) { return ''; }
+    });
+    }
+
+    // Examples
+
+    const str = "Hello ${message}, Welcome ${name}";
+    const data = {
+        name: 'Naveen',
+        message: 'World'
+    }
+
+    console.log(changeTemplate(str, data))
+</script>
+</body>
+</html>
