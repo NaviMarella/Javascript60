@@ -25,6 +25,8 @@ Javascript 60 Day Challenge to cover important topics and brush up your skills.
 1. Tally string names with reduce
 1. countdown clock
 1. webcam
+1. Speech Recognition
+
 
 ---
 
