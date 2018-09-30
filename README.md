@@ -26,6 +26,9 @@ Javascript 60 Day Challenge to cover important topics and brush up your skills.
 1. countdown clock
 1. webcam
 1. Speech Recognition
+1. Geolocation based Compass
+1. Follow Along Links Highlighter
+1. Stripe follow along Nav
 
 
 ---
