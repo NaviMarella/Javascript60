@@ -1,0 +1,33 @@
+html {
+    box-sizing: border-box;
+    background: url('https://source.unsplash.com/WLUHO9A_xik/1600x900') fixed;
+    background-size: cover;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 20px;
+    margin: 0;
+}
+
+h1 {
+    color: #F7C41F;
+}
+
+.mapContainer {
+    width: 50%;
+    height: 70vh;
+    margin: 40px;
+    background-color: white;
+}

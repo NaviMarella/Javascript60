@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Click and Drag</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Google Map Tracker</h1>
+    <div id="gMap" class="mapContainer"></div>
+    <script>
+        function setMap() {
+            var container = document.getElementById("gMap");
+            var mapInfo = {
+                center: new google.maps.LatLng(40.296898, -111.694649),
+                zoom: 5,
+                mapTypeControl: true,
+                mapTypeControlOptions: {
+                    style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
+                    position: google.maps.ControlPosition.TOP_CENTER
+                }
+            }
+            var map = new google.maps.Map(container, mapInfo);
+            console.log(map);
+            var marker = new google.maps.Marker({
+                position: myCenter
+            });
+            marker.setMap(map);
+
+            var infowindow = new google.maps.InfoWindow({
+                content: "Welcome to my home!!"
+            });
+
+            infowindow.open(map, marker);
+
+            google.maps.event.addListener(marker, 'click', function () {
+                var pos = map.getZoom();
+                map.setZoom(9);
+                map.setCenter(marker.getPosition());
+                window.setTimeout(function () {
+                    map.setZoom(pos);
+                }, 3000);
+            });
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=setMap"></script>
+</body>
+
+</html>
