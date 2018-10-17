@@ -29,7 +29,9 @@ Javascript 60 Day Challenge to cover important topics and brush up your skills.
 1. Geolocation based Compass
 1. Follow Along Links Highlighter
 1. Stripe follow along Nav
-
+1. Click And Drag
+1. Working with Google Maps
+1. Video Controller
 
 ---
 
