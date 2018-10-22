@@ -32,6 +32,7 @@ Javascript 60 Day Challenge to cover important topics and brush up your skills.
 1. Click And Drag
 1. Working with Google Maps
 1. Video Controller
+1. Whack A Mole Game
 
 ---
 
