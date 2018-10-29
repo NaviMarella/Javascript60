@@ -16,8 +16,8 @@ Javascript 60 Day Challenge to cover important topics and brush up your skills.
 1. Custom Video Player
 1. Slide in Scroll
 1. Object reference vs copy
-1. Local Storage and Event Delegation
-1.Cross line and timer countdown
+1. Local Storage and Event Delegation 
+1. Cross line and timer countdown
 1. CSS Text Shadow
 1. Group Sort
 1. Sort Without Articles
